@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Calculator</title>
+  </head>
+  <body>
+      <div class="container">
+          <div class="calculator">
+            <h1 class="font-weight-bold text-center text-primary">calculator</h1>
+            <table class="table table-bordered mt-5">
+                <thead>
+                    <tr class="d-flex justify-content-center mt-5">
+                        <td><input type="text" value="" class="border border-dark" id="result"></td>
+                    </tr>
+                    
+                  <tr class="d-flex justify-content-center mt-5">
+                    <td><input type="button" value="1" class="btn btn-light btn-outline-danger" onclick="dis('1')"></td>
+                    <td><input type="button" value="2" class="btn btn-light btn-outline-danger" onclick="dis('2')"></td>
+                    <td><input type="button" value="3" class="btn btn-light btn-outline-danger" onclick="dis('3')"></td>
+                    <td><input type="button" value="+"  class="btn btn-light btn-outline-primary" onclick="dis('+')"></td>
+                  </tr>
+                </tdead>
+                <tbody>
+                  <tr class="d-flex justify-content-center" >
+                    <td><input type="button" value="4" class="btn btn-light btn-outline-danger" onclick="dis('4')"></td>
+                    <td><input type="button" value="5" class="btn btn-light btn-outline-danger" onclick="dis('5')"></td>
+                    <td><input type="button" value="6" class="btn btn-light btn-outline-danger" onclick="dis('6')"></td>
+                    <td><input type="button" value="-"  class="btn btn-light btn-outline-primary" onclick="dis('-')"></td>
+                  </tr>
+                  <tr class="d-flex justify-content-center">
+                    <td><input type="button" value="7" class="btn btn-light btn-outline-danger" onclick="dis('7')"></td>
+                    <td><input type="button" value="8" class="btn btn-light btn-outline-danger" onclick="dis('8')"></td>
+                    <td><input type="button" value="9"  class="btn btn-light btn-outline-danger" onclick="dis('9')"></td>
+                    <td><input type="button" value="*"  class="btn btn-light btn-outline-primary" onclick="dis('*')"></td>
+                  </tr>
+                  <tr class="d-flex justify-content-center">
+                    <td><input type="button" value="/" class="btn btn-light btn-outline-primary" onclick="dis('/')"></td>
+                    <td><input type="button" value="%" class="btn btn-light btn-outline-primary" onclick="dis('%')"></td>
+                    <td><input type="button" value="0" class="btn btn-light btn-outline-danger" onclick="dis('0')"></td>
+                    <td><input type="button" value="="  class="btn btn-light btn-outline-primary" onclick="equal()"></td>
+                  </tr>
+                  <tr class="d-flex justify-content-center">
+                    <td><input type="button" value="C"  class="btn btn-light btn-outline-primary" onclick="clr()"></td>
+                </tr>
+                </tbody>
+              </table>
+          </div>
+      </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="calculator.js"></script>
+</body>
+</html>
