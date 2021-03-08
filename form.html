@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="form.css">
+    <title>forms</title>
+  </head>
+  <body>
+   <div class="container-fluid">
+     <div class="main">
+       <!-- <div class="banner"><img src="https://images.unsplash.com/photo-1572337999334-6c9beb560750?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" alt="image" class="img-fluid">
+       </div> -->
+       <div class="regist mt-5">
+        <div class="row">
+          <div class="col-md-6 offset-3 ">
+            <form>
+              <fieldset class="border border-white">
+              <legend class="text-center text-white">Registration</legend>
+              
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="UserName">First Name</label>
+                    <input type="name" class="form-control" id="firstname" name="name"  aria-describedby="firstname" aria-required="true" autocomplete="name" placeholder="Enter First Name" autofocus required>
+                  </div>
+                  <div class="form-group col-md-6 ">
+                    <label for="UserName">Last Name</label>
+                    <input type="lastname" class="form-control" id="lastname" name="name"  aria-describedby="lastname"  aria-required="true" autocomplete="lastname" placeholder="Enter Last Name" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="email" name="email" aria-required="true" aria-describedby="emailHelp" placeholder="Enter Email address" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="password"  aria-required="true" placeholder=" Enter Password" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="exampleInputConfirmPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirmpassword"  aria-required="true" placeholder=" Enter Confirm Password" required>
+                </div>
+              </div>
+
+                <div class="form-group ">
+                  <label for="Birthday">Birth Date</label>
+                  <input type="date" class="form-control" id="Birthday"  aria-required="true" aria-describedby="Date" placeholder="Enter Date Of Birth" required>
+                </div>
+
+                <div class="form-group ">
+                  <label for="gender">Gender</label></br>
+                  
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio1">
+                      <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" aria-required="true">Female
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="radio2">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" >Male
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Other
+                    </label>
+                  </div>
+                </div>
+                
+                
+                <div class="form-group">
+                  <label for="Mobile Number">Mobile Number</label>
+                  <input type="number" class="form-control" id="mobilenumber" name="phone"  aria-required="true" placeholder="Enter Mobile Number " required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small>
+                </div>
+               
+                  <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress"   aria-required="true" auto-autocomplete="address" placeholder="Enter Permanent Address" required>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputCity">City</label>
+                      
+                      <select id="inputcity" class="form-control"  aria-required="true" required>
+                        <option selected></option>
+                        <option value="1">Ahemdabad</option>
+                        <option value="2">Burhanpur</option>
+                        <option value="3">Delhi</option>
+                        <option value="4">Dewas</option>
+                        <option value="5">Indore</option>
+                        <option value="6">Ratlam</option>
+                        <option value="7">Ujjain</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                      <label for="inputState ">State</label>
+                      <select id="inputState" class="form-control"  aria-required="true" required>
+                        <option selected></option>
+                        <option value="1">Gujarat</option>
+                        <option value="2">Madhya Pradesh</option>
+                        <option value="4">Maharastra</option>
+                      </select>
+                    </div>
+                  </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlFile1">Upload Resume </label>
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1"  aria-required="true" required>
+                    </div>
+                  
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check Out</label>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+              
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="./form.js"></script>
+</body>
+</html>
